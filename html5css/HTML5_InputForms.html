@@ -98,6 +98,56 @@
 				   title="Valid Ip: 123.456.789.012 "
 				   required>
 			</p>
+			<p>
+				<label for="InputButton ">Input Button</label>
+				<input type="button" onclick="alert('Welcome!')" value="Click this button">
+			</p>
+			<p>
+				<form action="/action_page.php">
+					<label for="selectcolor">Choose a color:</label>
+					<input type="color" id="chosencolor" name="chosencolor" value="#ff0000">
+				</form>
+			</p>
+			<p>
+				<form action="/action_page.php">
+					<label for="time">Select a date and time:</label>
+					<input type="datetime-local" id="time" name="time">
+				</form>
+			</p>
+			<p>
+				<form action="/action_page.php">
+					<label for="month">Select a month and year:</label>
+					<input type="month" id="month" name="month">
+				</form>
+			</p>
+			<p>Select your favorite type of dance:</p>
+			<form action="/action_page.php">
+				<input type="radio" id="ballroom" name="fav_dance" value="Ballroom">
+				<label for="ballroom">Ballroom</label><br>
+				<input type="radio" id="swing" name="fav_dance" value="Swing">
+				<label for="swing">Swing</label><br>
+				<input type="radio" id="latin" name="fav_dance" value="Latin">
+				<label for="latin">Latin</label><br><br>
+				<input type="submit" value="Submit">
+			</form> 
+			<p>
+				<form action="/action_page.php" method="get">
+					<label for="range">Range (between 5 and 25):</label>
+					<input type="range" id="range" name="range" min="5" max="25">
+				</form>
+			</p>
+			<p>
+				<form action="/action_page.php">
+					<label for="appt">Choose a time:</label>
+					<input type="time" id="appt" name="appt">
+				</form>
+			</p>
+			<p>
+				<form action="/action_page.php">
+					<label for="week">Choose a week:</label>
+					<input type="week" id="week" name="week">
+				</form>
+			</p>
 			<!--Submit & Reset Button -->
 			<button type="submit" value="Submit">Submit</button>
 			<button type="reset" value="Reset">Reset</button>
@@ -105,3 +155,4 @@
 	</section>
 </body>
 </html>
+
